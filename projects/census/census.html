@@ -39,43 +39,41 @@
 
             <!-- Title -->
              <div class="row section">
-                <h1 class="heading col" style="flex:1">Census Record Linkage Co-op (Summer '26)</h1>
+                <h1 class="heading col" style="flex:1">Censu Linkage '26</h1>
             </div>
         
             <!-- Abstract -->
             <div class="row section">
                 <div class="col" style="flex: 3">
-                    <h1 class="row heading">Kira Kowaltschuk</h1>
-                    <p class="row text">Hello! I'm a programmer and artist currently attending the University of Guelph in Ontario. I'm pursuing a Bachelors of Computing Honors, majoring in computer science and minoring in linguistics. I'm an avid traveller and language-learner, and am on the lookout for international opportunities.</p>
+                    <h1 class="row heading">Abstract</h1>
+                    <p class="row text">This post outlines the work and learning I completed as a part of my summer 2026 co-op work term. Due to the sensitive nature of the data I worked with throughout the term I cannot go into great detail about the unique aspects of the pipeline we developed; however, I am free to divulge the methodologies and algorithms we used and developed.</p>
+            </div>
+
+            <div class="row section">
+                <div class="col" style="flex: 3">
+                    <h1 class="row heading">Context</h1>
+                    <p class="row text">From May to August of 2026, I worked under supervisors Gary Grewal and Luiza Antoine at the University of Guelph to assist a grad student in completing their research. The goal of which was to link married couples across Canadian Censuses to track family-related statistics (e.g. child mortality rate).</p>
+            </div>
+
+            <div class="row section">
+                <div class="col" style="flex: 3">
+                    <h1 class="row heading">Goals</h1>
+                    <p class="row text">My goals going into the work term were to improve my data analysis and python programming skills, additionally, I wanted to work on my collaborative development skills (using tools like git and creating reports in LaTeX) and my presentation skills. I expect these skills to be very helpful in future roles where teamwork and communication are key, and where iteration and quick development of prototypes are involved.</p>
+            </div>
+
+            <div class="row section">
+                <div class="col" style="flex: 3">
+                    <h1 class="row heading">Description</h1>
+                    <p class="row text">The job itself was divided into four stages: data analysis, data cleaning, couple generation, and linkage.</p>
+                    <p class="row text">Data analysis began with reviewing the census data were had access to and identifying what characteristic we could use in the process of identifying couples and linking them to other censuses, we also identified fields that might prove difficult to work with or introduce data-quality issues. We then presented our findings to our supervisors, adjusted accorsing to their suggestions, and proceeded to data-cleaning and couple generation.</p>
+                    <p class="row text">I was responsible for creating the couple generation pipeline, while the gard student I worked with developed our data cleaning pipeline; “couple generation” being the process of identifying married couples in the census and grouping them together. I began with a pure python prototype of the generator which I gathered requirements for, built, reviewed, and iterated on with our supervisors until we were sufficiently happy with it’s specificity. With a prototype built, I began implementing the full version using the Polars library for python (which was the first time i has used any kind of data-analysis library), and incorporated the in-progress versions of the clean data that the grad student had been developing. A key component of the generator was that it had to be as exact as possible, as we wanted to avoid compounding uncertainty until the very last step of the pipeline, thus almost no fuzzy matching was used, fields had to match almost exactly to be accepted a couple.</p>
+                    <p class="row text">With cleaning and generation done, we moved to the final step of the process, which was linking. We followed a similar methodology to the previous three steps, developing in polars and doing consistent reviews with our supervisors. We used a variety of fuzzy matching strategies, and provided many possible versions of the matcher for each review until we found a set of 3 versions that we were happy with. We continued to refine the 3 versions, and began to package them into an easy-to-use fully-documented suite of programs for historians to use for easy access and modification of the data.</p>
                 </div>
-                <div class="col" style="flex:1">
-                    <img class="profile" src="/assets/brand/profile.png" alt="Profile Picture" >
-                </div>
-            </div>
 
-            <!-- Job Description -->
             <div class="row section">
-                
-            </div>
-
-            <!-- Employer -->
-            <div class="row section">
-                
-            </div>
-
-            <!-- Goals -->
-            <div class="row section">
-                
-            </div>
-
-            <!-- Conclusions -->
-            <div class="row section">
-                
-            </div>
-
-            <!-- Acknowledgments -->
-            <div class="row section">
-                
+                <div class="col" style="flex: 3">
+                    <h1 class="row heading">Conclusion</h1>
+                    <p class="row text">I’m very satisfied with the work I was able to complete, I developed all of the skills I set out to work on and was able to contribute to a meaningful project. Many thanks to Gary Grewal and Luiza Antoine for their expertise and assistance, as well as the oppourtunity to work with them; I’d also like to extend a big thank you to Yana for being a great partner to work on this project.</p>
             </div>
         </div>
     </body>
